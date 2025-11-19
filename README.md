@@ -1,17 +1,44 @@
-# React + Vite
+# E-commerce React - Coder Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un proyecto de e-commerce construido con React 19 y Vite, utilizando JavaScript moderno (ES modules) y una arquitectura basada en componentes.
 
-Currently, two official plugins are available:
+## Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19.2.0** - Biblioteca de UI
+- **Vite 7.2.2** - Build tool y servidor de desarrollo
+- **ESLint** - Linter para calidad de código
+- **@vitejs/plugin-react** - Plugin de Vite con Babel para Fast Refresh
 
-## React Compiler
+## Estructura del Proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+├── components/
+│   ├── common/           # Componentes reutilizables
+│   │   ├── NavBar/       # Barra de navegación
+│   │   └── CartWidget/   # Widget del carrito de compras
+│   └── pages/            # Componentes de páginas
+│       └── Home/         # Página principal
+├── App.jsx              # Componente raíz
+├── App.css              # Estilos de la aplicación
+└── main.jsx             # Punto de entrada
+```
 
-## Expanding the ESLint configuration
+Cada componente está organizado en su propia carpeta con un archivo `index.jsx` como punto de entrada, permitiendo la co-ubicación de estilos, tests o sub-componentes en el futuro.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# E-commerce-react-coder-project
+## Componentes Implementados
+
+### Common Components
+- **NavBar** - Barra de navegación principal con logo y enlaces
+- **CartWidget** - Widget que muestra el carrito de compras
+
+### Pages
+- **Home** - Página principal de la aplicación
+
+## Comandos Disponibles
+
+### Desarrollo
+```bash
+npm run dev
+```
+Inicia el servidor de desarrollo de Vite.
