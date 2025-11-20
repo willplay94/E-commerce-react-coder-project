@@ -1,3 +1,5 @@
+import CartWidget from "../CartWidget";
+
 const NavBar = () => {
     return (
         <nav className="navBar" style={{display: "flex", backgroundColor: "#3b3b3bff"}}>
@@ -12,6 +14,7 @@ const NavBar = () => {
                     <a href="#" style={{textDecoration: "none", color: "inherit"}}>Enlace 2</a>
                 </li>
             </ul>
+            <CartWidget />
         </nav>
     )
 }

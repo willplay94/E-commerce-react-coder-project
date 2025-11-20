@@ -1,7 +1,9 @@
+import ItemListContainer from "../../common/ItemListContainer"
+
 const Home = () => {
     return (
         <div className="home">
-            <h1>Bienvenido a mi proyecto de React</h1>
+            <ItemListContainer greeting={"Bienvenido a mi proyecto de React"} />
         </div>
     )
 }
